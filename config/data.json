@@ -3,9 +3,9 @@
   "user": "Admin",
   "password": "admin123",
   "users" : [{
-      "name": "TenzinAarush Koppala",
-      "emp_id": 343,
-      "user_name": "tenzinaarushkoppala",
-      "password": "Tenzin@25"
+      "name": "Snow White",
+      "emp_id": 5555,
+      "user_name": "snowwhite",
+      "password": "Snow@5555"
   }]
 }
