@@ -3,6 +3,13 @@ class Locators:
     password = "//input[@name='password']"
     submit = "//button[text()=' Login ']"
     user_profile = "//*[@class='oxd-userdropdown-img']"
+    invalid_credentials_alert = "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p"
+
+    pim = "//span[text()='PIM']"
+    edit_employee = "//*[@class='oxd-icon-button oxd-table-cell-action-space']/i[@class='oxd-icon bi-pencil-fill']"
+    delete_employee = "//*[@class='oxd-icon-button oxd-table-cell-action-space']/i[@class='oxd-icon bi-trash']"
+    nickname_field = "//*[text()='Nickname']/ancestor::div[@class='oxd-input-group__label-wrapper']" \
+                     "/following-sibling::div/input"
 
     add = "//button[text()=' Add ']"
     firstName = '//input[@name="firstName"]'
@@ -10,7 +17,7 @@ class Locators:
     emp_id = '//div[@class="oxd-form-row"]/div[2]/div/div/div[2]/input'
     save_emp = "//button[text()=' Save ']"
     admin = "//span[text()='Admin']"
-    add_user_click = '//button[text()=" Add "]'
+    add_user_click = "//button[text()=' Add ']"
     user_role = '//div[@class="oxd-form-row"]/div/div[1]/div/div[2]/div/div/div[1]'
     user_role_value = "//span[text()='ESS']"
     emp_name = '//div[@class="oxd-form-row"]/div/div[2]/div/div[2]/div/div/input'

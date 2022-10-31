@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as ec
 class Login:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 60, poll_frequency=10)
+        self.wait = WebDriverWait(self.driver, 10, poll_frequency=2)
 
     def set_username(self, username):
         user = self.wait.until(ec.presence_of_element_located((By.XPATH, Locators.username)))
@@ -25,4 +25,6 @@ class Login:
     def verify_login(self):
         self.wait.until(ec.presence_of_element_located((By.XPATH, Locators.user_profile)))
 
+    def check_invalid_credentials_alert(self):
+        self.wait.until(ec.presence_of_element_located((By.XPATH, Locators.invalid_credentials_alert)))
 
